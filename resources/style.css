@@ -18,6 +18,88 @@ a {
 }
 
 
+/* Menu Start */
+
+#Menu {
+    position: fixed;
+    z-index: 433443;
+    bottom: 0;
+    width: 100%;
+}
+
+#Menu .container {
+    width: 100%;
+    position: relative;
+    padding: 0;
+}
+
+.tab-container {
+    width: 100%;
+    background-color: #f2f2f2;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px 10px 0 10px;
+    box-shadow: 0px 4px 15px 0px #00000040;
+    border-radius: 100px 100px 0 0;
+}
+
+#Menu .container .tab-container .tab {
+    float: left;
+    padding: 10px 20px;
+    font-size: 17px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+#Menu .container .tab-container .tab i {
+    color: #7E7E7E;
+    font-size: 22px;
+}
+
+#Menu .container .tab-container .tab:hover {
+    background-color: #e1e1e1
+}
+
+#Menu .container .tab-container .tab.active {
+    background-color: #FF0000;
+    border-radius: 20px 20px 0 0;
+}
+
+#Menu .container .tab-container .tab.active i {
+    color: #fff;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #fff;
+}
+
+#Menu .container .tab-content {
+    width: 100%;
+    padding: 40px 20px;
+    border: 1px solid #cfcfcf;
+    border-top: 0;
+    position: absolute;
+    display: none;
+}
+
+#Menu .container .tab-content h1 {
+    font-weight: 400;
+    font-size: 27px;
+    margin-bottom: 20px;
+    /* animation: fading 1s; */
+}
+
+#Menu .container .tab-content p {
+    color: #555;
+    font-size: 16px;
+    font-weight: 400;
+    /* animation: fading 2s; */
+}
+
+
+/* Menu ENd */
+
+
 /* TopNav Section Start */
 
 #TopNav .ourLocation button {
@@ -468,3 +550,115 @@ hr {
 
 
 /* GameBtn End */
+
+
+/* Search Page Start */
+
+
+/* Top NavPage Start */
+
+#TopNavPage .topSearch button {
+    border: none;
+    background: #eeeeee;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+#TopNavPage .topSearch {
+    display: flex;
+}
+
+#TopNavPage .icon-search-container {
+    display: inline-block;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    background-color: #eeeeee;
+    transition: width 0.2s ease-out;
+    backface-visibility: hidden;
+    margin: 0 4px;
+}
+
+#TopNavPage .icon-search-container.active {
+    width: 185px;
+}
+
+#TopNavPage .icon-search-container.active .fa-times-circle {
+    opacity: 1;
+}
+
+#TopNavPage .icon-search-container.active .search-input {
+    width: 100px;
+}
+
+#TopNavPage .icon-search-container .fa-search {
+    color: #3E3E3E;
+    font-size: 18px;
+    position: absolute;
+    font-weight: 400;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+#TopNavPage .icon-search-container .fa-times-circle {
+    opacity: 0;
+    color: #d9d9d9;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    transition: opacity 0.2s ease-out;
+    cursor: pointer;
+}
+
+#TopNavPage .icon-search-container .search-input {
+    position: absolute;
+    cursor: default;
+    left: 45px;
+    top: 6px;
+    width: 0;
+    padding: 5px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    line-height: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    transition: width 0.2s ease-out;
+}
+
+#TopNavPage .dropdown-toggle::after {
+    display: none !important;
+}
+
+#TopNavPage .dropdown {
+    background: #eeee;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    box-shadow: none !important;
+}
+
+#TopNavPage .dropdown button {
+    border: none;
+}
+
+#TopNavPage .drop {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#TopNavPage .dropdown i {
+    font-size: 22px;
+}
+
+#Products .item {
+    margin: 10px 0;
+}
+
+
+/* Top NavPage End */
