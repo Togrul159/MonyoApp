@@ -45,7 +45,7 @@ $(document).ready(function() {
 
             },
             1000: {
-                items: 3,
+                items: 4,
                 nav: false,
                 loop: false,
                 dots: false
@@ -60,7 +60,7 @@ $(document).ready(function() {
         responsiveClass: true,
         responsive: {
             0: {
-                items: 1.8,
+                items: 1.7,
                 loop: true,
                 nav: false,
                 dots: false
@@ -72,7 +72,7 @@ $(document).ready(function() {
 
             },
             1000: {
-                items: 4,
+                items: 3,
                 nav: false,
                 loop: false,
                 dots: false
@@ -87,7 +87,7 @@ $(document).ready(function() {
         responsiveClass: true,
         responsive: {
             0: {
-                items: 1.3,
+                items: 1.1,
                 nav: false,
                 dots: false
             },
@@ -99,6 +99,136 @@ $(document).ready(function() {
             },
             1000: {
                 items: 3,
+                nav: false,
+                loop: false,
+                dots: false
+
+            }
+        }
+    });
+    $('#OwlDemo4').owlCarousel({
+        loop: true,
+        nav: false,
+        margin: 10,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1.7,
+                nav: false,
+                dots: false
+            },
+            600: {
+                items: 3,
+                nav: false,
+                dots: false
+
+            },
+            1000: {
+                items: 4,
+                nav: false,
+                loop: false,
+                dots: false
+
+            }
+        }
+    });
+    $('#OwlDemo5').owlCarousel({
+        loop: true,
+        nav: false,
+        margin: 10,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1.6,
+                nav: false,
+                dots: false
+            },
+            600: {
+                items: 3,
+                nav: false,
+                dots: false
+
+            },
+            1000: {
+                items: 4,
+                nav: false,
+                loop: false,
+                dots: false
+
+            }
+        }
+    });
+    $('#OwlDemo6').owlCarousel({
+        loop: true,
+        nav: false,
+        margin: 10,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1.6,
+                nav: false,
+                dots: false
+            },
+            600: {
+                items: 3,
+                nav: false,
+                dots: false
+
+            },
+            1000: {
+                items: 4,
+                nav: false,
+                loop: false,
+                dots: false
+
+            }
+        }
+    });
+    $('#OwlDemo7').owlCarousel({
+        loop: true,
+        nav: false,
+        margin: 10,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1.6,
+                nav: false,
+                dots: false
+            },
+            600: {
+                items: 3,
+                nav: false,
+                dots: false
+
+            },
+            1000: {
+                items: 4,
+                nav: false,
+                loop: false,
+                dots: false
+
+            }
+        }
+    });
+    $('#OwlDemo8').owlCarousel({
+        loop: true,
+        nav: false,
+        margin: 10,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1.2,
+                nav: false,
+                dots: false
+            },
+            600: {
+                items: 3,
+                nav: false,
+                dots: false
+
+            },
+            1000: {
+                items: 4,
                 nav: false,
                 loop: false,
                 dots: false

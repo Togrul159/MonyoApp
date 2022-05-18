@@ -19,6 +19,15 @@
         font-weight: 400;
         font-size: 14px !important;
     }
+    /* #Organization .container {
+        display: none;
+    }
+    #Product .container {
+        display: none;
+    }
+    #Campaing .container {
+        display: none;
+    } */
 }
 
 @media only screen and (max-width:476px) {
@@ -29,6 +38,16 @@
     .carousel-caption .sliderText p {
         margin: 0;
         padding: 0 !important;
+    }
+    #GameBtn .GameContent span {
+        font-size: 20px !important;
+    }
+    #GameBtn .GameContent {
+        display: flex;
+        text-align: start !important;
+    }
+    #GameBtn .GameImg img {
+        width: 100% !important;
     }
 }
 
@@ -85,12 +104,42 @@
         font-weight: 600;
         font-size: 14px !important;
     }
-    .imgFood {
+    #Products .home-demo .item .itemTitle span {
+        font-weight: 400;
+        font-size: 12px !important;
+    }
+    #Products .imgFood {
+        width: 100%;
+        height: 130px !important;
+    }
+    /* .imgFood {
         width: 100%;
         height: 100% !important;
-    }
+    } */
     #Organization .home-demo .item .itemTitle .orgInfo span {
         font-weight: 400;
         font-size: 12px !important;
+    }
+    #GameBtn .GameImg img {
+        width: 130% !important;
+    }
+    #GameBtn .GameContent span {
+        font-size: 17px !important;
+    }
+    .home-demo .item .itemImg .profileImgRestauran {
+        position: absolute;
+        bottom: 5px !important;
+        left: 7px !important;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+    }
+    .carousel-inner .overlay {
+        position: absolute;
+        z-index: 1213;
+        bottom: 0;
+        width: 100%;
+        height: 150px !important;
+        background: linear-gradient(360deg, #454444 -40.26%, rgba(0, 0, 0, 0) 82.03%);
     }
 }
