@@ -238,9 +238,11 @@ $(document).ready(function() {
     });
 });
 
+
+// Menu Start
 var tabButton = document.getElementsByClassName('tab'),
     tabContent = document.getElementsByClassName('tab-content');
-
+// var tabMenu = document.getElementById('Menu');
 tabButton[0].classList.add('active');
 tabContent[0].style.display = 'block';
 
@@ -253,7 +255,13 @@ function city(e, x) {
     document.getElementById(x).style.display = 'block';
     e.currentTarget.classList.add('active');
 }
+// Menu End
 
+
+
+
+
+// Search Input Start
 $(document).ready(function() {
 
     var $searchTrigger = $('[data-ic-class="search-trigger"]'),
@@ -291,3 +299,4 @@ $(document).ready(function() {
     });
 
 });
+// Search Input Start

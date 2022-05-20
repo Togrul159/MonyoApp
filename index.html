@@ -31,12 +31,6 @@
     <!-- Menu End -->
 
 
-    <div class="tab-content" id="Location">
-
-    </div>
-
-
-
     <!-- Home Page Start -->
     <div class="tab-content" id="HomePage">
         <!-- Top Nav Section Start -->
@@ -52,8 +46,15 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-4 col-4">
-                        <div class="ourPartners">
-                            <a href="" class="clr1">Partnyor ol</a>
+                        <div class="drop">
+                            <div class="dropdown">
+                                <button class="  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fal fa-ellipsis-h"></i>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Partnyor ol</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -108,18 +109,7 @@
         </div>
         <!-- First Slide End -->
 
-        <!-- Search Input Start -->
-        <!-- <section id="InpSearch">
-        <div class="container">
-            <div class="row mt-5">
-                <div class="input-group " style="margin: 3rem 0;">
-                    <button class="btn" type="button" id="button-addon1"><i class="far fa-search"></i></button>
-                    <input type="text" class="form-control searchInp" placeholder="Axtar" aria-label="Example text with button addon" aria-describedby="button-addon1">
-                </div>
-            </div>
-        </div>
-    </section> -->
-        <!-- Search Input End -->
+
 
         <hr>
 
@@ -127,7 +117,7 @@
         <section id="Campaing">
             <div class="container">
                 <div class="home-demo">
-                    <div class="row align-items-center">
+                    <div class="row mx-1 align-items-center">
                         <div class="col-lg-8 col-md-8 col-sm-8 col-8">
                             <h3>Campaigns</h3>
                         </div>
@@ -269,8 +259,8 @@
         <!-- Products Slider Start -->
         <section id="Products">
             <div class="container">
-                <div class="home-demo mt-3">
-                    <div class="row align-items-center">
+                <div class="home-demo ">
+                    <div class="row mx-1 align-items-center">
                         <div class="col-lg-8 col-md-8 col-sm-8 col-8">
                             <h3>Products</h3>
                         </div>
@@ -383,7 +373,7 @@
         <section id="Organization">
             <div class="container">
                 <div class="home-demo mt-3">
-                    <div class="row align-items-center">
+                    <div class="row mx-1 align-items-center">
                         <div class="col-lg-8 col-md-8 col-sm-8 col-8">
                             <h3>Organizations</h3>
                         </div>
@@ -541,7 +531,7 @@
         <section id="Recommendation">
             <div class="container">
                 <div class="home-demo mt-3">
-                    <div class="row align-items-center">
+                    <div class="row mx-1 align-items-center">
                         <div class="col-lg-8 col-md-8 col-sm-8 col-8">
                             <h3>Recommended Restaurants</h3>
                         </div>
@@ -677,7 +667,7 @@
         <section id="Recommendation">
             <div class="container">
                 <div class="home-demo mt-3">
-                    <div class="row align-items-center">
+                    <div class="row mx-1 align-items-center">
                         <div class="col-lg-8 col-md-8 col-sm-8 col-8">
                             <h3>Restaurants with reservations</h3>
                         </div>
@@ -790,7 +780,7 @@
         <section id="Recommendation">
             <div class="container">
                 <div class="home-demo mt-3">
-                    <div class="row align-items-center">
+                    <div class="row mx-1 align-items-center">
                         <div class="col-lg-8 col-md-8 col-sm-8 col-8">
                             <h3>Restaurants with reservations</h3>
                         </div>
@@ -927,7 +917,7 @@
         <section id="Recommendation">
             <div class="container">
                 <div class="home-demo mt-3">
-                    <div class="row align-items-center">
+                    <div class="row mx-1 align-items-center">
                         <div class="col-lg-8 col-md-8 col-sm-8 col-8">
                             <h3>Restaurants with reservations</h3>
                         </div>
@@ -1039,8 +1029,8 @@
         <!-- Takeaway near you Slider Start -->
         <section id="Recommendation">
             <div class="container">
-                <div class="home-demo mt-3">
-                    <div class="row align-items-center">
+                <div class="home-demo mb-5 mt-3">
+                    <div class="row mx-1 align-items-center">
                         <div class="col-lg-8 col-md-8 col-sm-8 col-8">
                             <h3>Takeaway</h3>
                         </div>
@@ -1326,24 +1316,90 @@
             </div>
         </section>
         <!-- Products  End-->
-
-
-
-
-
-
-
-
-
-
     </div>
     <!-- Search Page End -->
 
+    <!-- Location Page End -->
+    <div class="tab-content" id="Location" style="display: none;">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="./resources/app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <section id="MapLoc">
+            <section id="TopNavPage">
+                <div class="container">
+                    <div class="row my-3">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="topSearch">
+                                <button onclick="city(event, 'HomePage')"><i class="fas fa-home"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="MapLoc">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194473.42999605992!2d49.71487499392486!3d40.394507979442416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6791c7109dbe9f%3A0xc598ee0cbfbcde3f!2sDeirvlon%20Technologies!5e0!3m2!1sru!2s!4v1651218057160!5m2!1sru!2s"
+                    width="100%" style="border:0; border-radius: 0px; height: 90vh; padding-bottom: 20px;" allowfullscreen=" " loading="lazy " referrerpolicy="no-referrer-when-downgrade "></iframe>
+            </div>
+            <div class="mapSearch">
+                <div class="row w-100 cardSearch">
+                    <div class="col-lg-12">
+                        <div class="title">
+                            <div class="locationIcons"><i class="fas fa-map-marker-alt"></i></div>
+                            <h3>Use current location</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="search-box">
+                            <button class="search-button">
+                              <i class="fas fa-search"></i>
+                            </button>
+                            <input type="text" class="search-input" placeholder="Search..">
+                        </div>
+                    </div>
+                    <div class="row CafeLoc">
+                        <div class="col-lg-12">
+                            <div class="navCafe">
+                                <div class="imgDiv">
+                                    <img src="./resources/img/Ellipse 9.svg" alt="">
+                                </div>
+                                <span>Kolorit Kafe</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="navCafe">
+                                <div class="imgDiv">
+                                    <img src="./resources/img/Ellipse 9.svg" alt="">
+                                </div>
+                                <span>Kolorit Kafe</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="navCafe">
+                                <div class="imgDiv">
+                                    <img src="./resources/img/Ellipse 9.svg" alt="">
+                                </div>
+                                <span>Kolorit Kafe</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="navCafe">
+                                <div class="imgDiv">
+                                    <img src="./resources/img/Ellipse 9.svg" alt="">
+                                </div>
+                                <span>Kolorit Kafe</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Location Page End -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js "></script>
+    <script src="./resources/app.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
 </body>
 
 </html>
