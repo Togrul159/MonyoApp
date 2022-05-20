@@ -217,7 +217,7 @@ $(document).ready(function() {
         responsiveClass: true,
         responsive: {
             0: {
-                items: 1.2,
+                items: 1.8,
                 nav: false,
                 dots: false
             },
@@ -240,9 +240,9 @@ $(document).ready(function() {
 
 
 // Menu Start
-var tabButton = document.getElementsByClassName('tab'),
+const tabButton = document.getElementsByClassName('tab'),
     tabContent = document.getElementsByClassName('tab-content');
-// var tabMenu = document.getElementById('Menu');
+const tabMenu = document.getElementById('Menu');
 tabButton[0].classList.add('active');
 tabContent[0].style.display = 'block';
 
@@ -254,6 +254,14 @@ function city(e, x) {
     }
     document.getElementById(x).style.display = 'block';
     e.currentTarget.classList.add('active');
+
+
+    // Location
+    if (x == 'Location') {
+        tabMenu.style.display = 'none';
+    } else {
+        tabMenu.style.display = '';
+    }
 }
 // Menu End
 
